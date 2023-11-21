@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "6t45lujGedT3IggKhdDau7ZOAr/nNQSG/utaKmIAVsKcpY0HcQpl9L33O1d+67rGVgLSjOE5J0FQMk2x4T8Kcg==",
+  "success": true,
+  "projectFilePath": "C:\\test\\other\\WinFormsAppGmailLabel\\WinFormsAppGmailLabel\\WinFormsAppGmailLabel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\google.apis\\1.64.0\\google.apis.1.64.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\google.apis.auth\\1.64.0\\google.apis.auth.1.64.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\google.apis.core\\1.64.0\\google.apis.core.1.64.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\google.apis.gmail.v1\\1.64.0.3231\\google.apis.gmail.v1.1.64.0.3231.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.management\\7.0.2\\system.management.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
