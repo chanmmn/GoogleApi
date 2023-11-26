@@ -1,6 +1,7 @@
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Gmail.v1;
 using Google.Apis.Services;
+using System.ComponentModel;
 
 namespace WinFormsAppGmailLabel
 {
@@ -36,8 +37,6 @@ namespace WinFormsAppGmailLabel
                 HttpClientInitializer = credential,
                 ApplicationName = "GmailExtractor",
             });
-
-
 
             // Get the list of threads in the folder using the Users.Threads.List method
             var request = service.Users.Threads.List("me");
@@ -114,10 +113,19 @@ namespace WinFormsAppGmailLabel
                 gmailFolder.labelName = label.Name;
                 gmailFolderList.lstFolder.Add(gmailFolder);
             }
-            gmailFolderList.lstFolder.Sort();
-            dataGridView1.DataSource = gmailFolderList;
+
+            GmailFolderList gmailFolderList1 = new GmailFolderList();
+            gmailFolderList1.lstFolder =  gmailFolderList.lstFolder.OrderBy(r => r.labelName).ToList();
+            //dataGridView1.DataSource = gmailFolderList;
+            //dataGridView1.DataMember = "lstFolder";
+            dataGridView1.DataSource = gmailFolderList1;
             dataGridView1.DataMember = "lstFolder";
+            //dataGridView1.DataMember = "lstFolder";
+            //dataGridView1.Columns[1].SortMode = DataGridViewColumnSortMode.Programmatic;
+            //dataGridView1.Sort(dataGridView1.Columns[1], ListSortDirection.Descending);
+
             dataGridView1.Refresh();
+            
         }
 
         private void btnAttach_Click(object sender, EventArgs e)
